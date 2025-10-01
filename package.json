@@ -1,7 +1,7 @@
 {
   "name": "vue-motion",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
@@ -12,6 +12,17 @@
     "preview": "vite preview",
     "format": "prettier --write src/"
   },
+  "keywords": [
+    "vue-motion",
+    "vue3 animations",
+    "Transition",
+    "vue animations",
+    "Transition for vue",
+    "component based animations"
+  ],
+  "author": "Redskullvue",
+  "license": "MIT",
+  "description": "Animation library built on top of vue.js Transitiion component for fast and easy to use animations",
   "dependencies": {
     "vue": "^3.5.22"
   },
