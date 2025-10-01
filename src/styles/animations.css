@@ -1,0 +1,29 @@
+/*
+ 
+----------------------------
+GLOBAL VARIABLES (defaults)
+----------------------------
+
+*/
+:root {
+  --animation-duration: 300ms;
+  --animation-easing: ease;
+  --animation-delay: 0ms;
+}
+
+/* All animations will be created here + @keyframes */
+/* NOTE : Classes Prefix is super important be sure to write it as the animation name prop */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--animation-duration) var(--animation-easing) var(--animation-delay);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
