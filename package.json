@@ -20,10 +20,17 @@
     "Transition for vue",
     "component based animations"
   ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Redskullvue/vue-motion"
+  },
   "author": "Redskullvue",
   "license": "MIT",
   "description": "Animation library built on top of vue.js Transitiion component for fast and easy to use animations",
-  "dependencies": {
+  "peerDependencies": {
     "vue": "^3.5.22"
   },
   "devDependencies": {
