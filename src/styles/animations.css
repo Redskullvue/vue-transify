@@ -14,6 +14,7 @@ GLOBAL VARIABLES (defaults)
 /* All animations will be created here + @keyframes */
 /* NOTE : Classes Prefix is super important be sure to write it as the animation name prop */
 
+/* Fade Animation */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity var(--animation-duration) var(--animation-easing) var(--animation-delay);
@@ -26,4 +27,31 @@ GLOBAL VARIABLES (defaults)
 .fade-enter-to,
 .fade-leave-from {
   opacity: 1;
+}
+
+/* SlideInRight Animation */
+@keyframes SlideInRight {
+  from {
+    transform: translate3d(75%, 0, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* When entering */
+.slideInRight-enter-active {
+  position: absolute;
+  animation: SlideInRight var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.slideInRight-leave-active {
+  position: absolute;
+  animation: SlideInRight var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
 }
