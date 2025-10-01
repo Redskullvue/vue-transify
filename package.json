@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": false,
   "type": "module",
+  "main": "dist/vue-motion.umd.js",
+  "module": "dist/vue-motion.es.js",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },

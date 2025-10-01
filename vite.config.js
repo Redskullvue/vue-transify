@@ -31,8 +31,8 @@ export default defineConfig(({ command }) => {
     build: {
       lib: {
         entry: fileURLToPath(new URL('./src/index.js', import.meta.url)),
-        name: 'VueSmoothTransitions',
-        fileName: (format) => `vue-smooth-transitions.${format}.js`,
+        name: 'vueMotion',
+        fileName: (format) => `vue-motion.${format}.js`,
       },
       rollupOptions: {
         // Don't bundle Vue into your lib, let the app use its own Vue
