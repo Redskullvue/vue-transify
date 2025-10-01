@@ -85,7 +85,7 @@ GLOBAL VARIABLES (defaults)
     var(--animation-easing, ease) reverse forwards;
 }
 
-/* SlideInLeft Animation */
+/* SlideInUp Animation */
 @keyframes SlideInUp {
   from {
     transform: translate3d(0, 50%, 0);
@@ -109,5 +109,32 @@ GLOBAL VARIABLES (defaults)
 .slideInUp-leave-active {
   position: absolute;
   animation: SlideInUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
+
+/* SlideInDown Animation */
+@keyframes SlideInDown {
+  from {
+    transform: translate3d(0, -50%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* When entering */
+.slideInDown-enter-active {
+  position: absolute;
+  animation: SlideInDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.slideInDown-leave-active {
+  position: absolute;
+  animation: SlideInDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }

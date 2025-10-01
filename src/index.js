@@ -3,10 +3,12 @@ import Fade from '@/components/Fade.vue'
 import SlideInLeft from '@/components/SlideInLeft.vue'
 import SlideInRight from '@/components/SlideInRight.vue'
 import SlideInUp from '@/components/SlideInUp.vue'
+import SlideInDown from './components/SlideInDown.vue'
 
 export default {
   Fade,
   SlideInLeft,
   SlideInRight,
   SlideInUp,
+  SlideInDown,
 }
