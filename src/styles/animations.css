@@ -84,3 +84,30 @@ GLOBAL VARIABLES (defaults)
   animation: SlideInLeft var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
+
+/* SlideInLeft Animation */
+@keyframes SlideInUp {
+  from {
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* When entering */
+.slideInUp-enter-active {
+  position: absolute;
+  animation: SlideInUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.slideInUp-leave-active {
+  position: absolute;
+  animation: SlideInUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
