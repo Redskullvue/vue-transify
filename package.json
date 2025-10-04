@@ -1,10 +1,12 @@
 {
   "name": "vue-motion",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "private": false,
   "type": "module",
   "main": "dist/vue-motion.umd.js",
   "module": "dist/vue-motion.es.js",
+  "unpkg": "dist/vue-motion.umd.js",
+  "jsdelivr": "dist/vue-motion.umd.js",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
@@ -16,11 +18,12 @@
   },
   "keywords": [
     "vue-motion",
-    "vue3 animations",
-    "Transition",
+    "vue3",
+    "vue transition",
     "vue animations",
-    "Transition for vue",
-    "component based animations"
+    "vue motion library",
+    "component animations",
+    "motion"
   ],
   "files": [
     "dist"

@@ -34,7 +34,7 @@ npm install vue-motion
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import '@/styles/animations.css'
+import "vue-motion/dist/vue-motion.css";
 
 createApp(App).mount('#app')
 ```
@@ -56,7 +56,7 @@ createApp(App).mount('#app')
 <script setup>
 import { ref } from 'vue'
 // Import the component
-import { Fade } from '../../src/components/Fade.vue'
+import { Fade } from "vue-motion";
 const show = ref(true)
 </script>
 
