@@ -353,3 +353,75 @@ GLOBAL VARIABLES (defaults)
   animation: RotateDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
+
+@keyframes ZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* When entering */
+.zoomIn-enter-active {
+  position: absolute;
+  animation: ZoomIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.zoomIn-leave-active {
+  position: absolute;
+  animation: ZoomIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
+
+@keyframes ZoomUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate3d(0, 70%, 0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* When entering */
+.zoomUp-enter-active {
+  position: absolute;
+  animation: ZoomUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.zoomUp-leave-active {
+  position: absolute;
+  animation: ZoomUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
+
+@keyframes ZoomDown {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate3d(0, -70%, 0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* When entering */
+.zoomDown-enter-active {
+  position: absolute;
+  animation: ZoomDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.zoomDown-leave-active {
+  position: absolute;
+  animation: ZoomDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}

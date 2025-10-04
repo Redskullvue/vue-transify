@@ -10,6 +10,9 @@ import BounceUp from './components/BounceUp.vue'
 import RotateDown from './components/RotateDown.vue'
 import RotateIn from './components/RotateIn.vue'
 import RotateUp from './components/RotateUp.vue'
+import ZoomDown from './components/ZoomDown.vue'
+import ZoomUp from './components/ZoomUp.vue'
+import ZoomIn from './components/ZoomIn.vue'
 export default {
   Fade,
   SlideInLeft,
@@ -22,4 +25,7 @@ export default {
   RotateDown,
   RotateIn,
   RotateUp,
+  ZoomDown,
+  ZoomUp,
+  ZoomIn,
 }
