@@ -1,4 +1,5 @@
 // This file is only used for exports to the built version
+import './styles/animations.css'
 import Fade from '@/components/Fade.vue'
 import SlideInLeft from '@/components/SlideInLeft.vue'
 import SlideInRight from '@/components/SlideInRight.vue'
@@ -13,7 +14,8 @@ import RotateUp from './components/RotateUp.vue'
 import ZoomDown from './components/ZoomDown.vue'
 import ZoomUp from './components/ZoomUp.vue'
 import ZoomIn from './components/ZoomIn.vue'
-export default {
+
+export {
   Fade,
   SlideInLeft,
   SlideInRight,
