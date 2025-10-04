@@ -1,38 +1,117 @@
-# vue-motion
+# 🌀 Vue Motion
 
-This template should help get you started developing with Vue 3 in Vite.
+**Vue Motion** is a lightweight animation library built on top of Vue’s native [`<Transition>`](https://vuejs.org/guide/built-ins/transition.html) component — making it **powerful**, **easy to use**, and **fully customizable**.
 
-## Recommended IDE Setup
+With **flexible props** and **Quality Animations** for fine-tuning, Vue Motion makes it effortless to bring your Vue components to life.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 🚀 Features
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- ✅ Built directly on top of Vue’s core `<Transition>` component
+- ✅ Zero dependencies — just Vue
+- ✅ Simple prop-based customization (duration, delay, easing, etc.)
+- ✅ Works seamlessly with **Vue 3**
+- ✅ Lightweight — less than **2KB gzipped**
+- ✅ Open for contributions & custom animation extensions
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 📦 Installation
 
-## Project Setup
-
-```sh
-npm install
+```bash
+# npm
+npm install vue-motion
 ```
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-npm run dev
+## 🧩 Basic Usage
+
+-First Import the styles into you main.js
+
+```main.js
+
+import { createApp } from 'vue'
+import App from './App.vue'
+import '@/styles/animations.css'
+
+createApp(App).mount('#app')
 ```
 
-### Compile and Minify for Production
+-Then you can import each animation as a component in your files and use it
 
-```sh
-npm run build
+```app.vue
+<template>
+  <div style="padding: 2rem">
+    <button @click="show = !show">Toggle Fade</button>
+    <!-- Use the component -->
+    <Fade :duration="600" :appear="true">
+      <p v-if="show">✨ Hello World from Fade Animation !</p>
+    </Fade>
+    <!-- Use these props to change the behavior of your animation -->
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+// Import the component
+import { Fade } from '../../src/components/Fade.vue'
+const show = ref(true)
+</script>
+
 ```
+
+---
+
+## ⚙️ Props
+
+-Library is fully prop based so you can customize the animations based on your need
+
+| Prop         | Type      | Default   | Description                                                                           |
+| ------------ | --------- | --------- | ------------------------------------------------------------------------------------- |
+| **appear**   | `boolean` | `'false'` | If true animation will run on load                                                    |
+| **duration** | `number`  | `500`     | Duration of the animation in milliseconds.                                            |
+| **delay**    | `number`  | `0`       | Delay before the animation starts in milliseconds.                                    |
+| **easing**   | `string`  | `'ease'`  | CSS easing function to control the transition curve(CSS acceptable timing functions). |
+
+---
+
+## 🧑‍💻 Contributing
+
+Contributions are welcome !
+If you’d like to add a new animation, improve docs, or fix a bug:
+
+1. **Fork** the repository.
+2. **Create** your feature branch.
+
+```bash
+   git checkout -b feat/animation-name
+```
+
+3. **Commit** your changes.
+4. **Push** to your brach.
+5. **Open** a PR
+
+-💡 Before submitting, make sure your code follows the existing structure and passes any lint or build checks.Be sure to follow the naming convetion.
+
+-All Vue files and animations use PascalCase
+-All Class prefixes use the camelCase
+
+---
+
+## 🌟 Support & Feedback
+
+If you like **Vue Motion**, please consider supporting the project:
+
+- ⭐ **Star** the repo on [GitHub](https://github.com/Redskullvue/vue-motion) — it helps others discover the library
+- 🐞 **Open an issue** or suggest new features
+- 🧩 **Share it** with other Vue developers and the community
+
+Your support helps keep the project active and growing 💚
+
+---
+
+## 🖼️ Demo & Playground
+
+Coming Soon ! :)
