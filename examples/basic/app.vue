@@ -12,6 +12,6 @@
 <script setup>
 import { ref } from 'vue'
 // Import the component
-import { Fade } from '../../src/components/Fade.vue'
+import { Fade } from 'vue-transify'
 const show = ref(true)
 </script>

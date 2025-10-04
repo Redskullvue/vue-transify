@@ -1,12 +1,12 @@
 {
-  "name": "vue-motion",
+  "name": "vue-transify",
   "version": "0.9.0",
   "private": false,
   "type": "module",
-  "main": "dist/vue-motion.umd.js",
-  "module": "dist/vue-motion.es.js",
-  "unpkg": "dist/vue-motion.umd.js",
-  "jsdelivr": "dist/vue-motion.umd.js",
+  "main": "dist/vue-transify.umd.js",
+  "module": "dist/vue-transify.es.js",
+  "unpkg": "dist/vue-transify.umd.js",
+  "jsdelivr": "dist/vue-transify.umd.js",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
@@ -17,20 +17,21 @@
     "format": "prettier --write src/"
   },
   "keywords": [
-    "vue-motion",
+    "vue-transify",
     "vue3",
     "vue transition",
     "vue animations",
-    "vue motion library",
+    "vue animation library",
     "component animations",
-    "motion"
+    "motion",
+    "vue motions"
   ],
   "files": [
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Redskullvue/vue-motion"
+    "url": "https://github.com/Redskullvue/vue-transify"
   },
   "author": "Redskullvue",
   "license": "MIT",

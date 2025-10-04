@@ -31,8 +31,8 @@ export default defineConfig(({ command }) => {
     build: {
       lib: {
         entry: fileURLToPath(new URL('./src/index.js', import.meta.url)),
-        name: 'vueMotion',
-        fileName: (format) => `vue-motion.${format}.js`,
+        name: 'vueTransify',
+        fileName: (format) => `vue-transify.${format}.js`,
       },
       rollupOptions: {
         // Don't bundle Vue into your lib, let the app use its own Vue

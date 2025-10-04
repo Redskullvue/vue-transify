@@ -1,8 +1,8 @@
-# 🌀 Vue Motion
+# 🌀 Vue Transify
 
-**Vue Motion** is a lightweight animation library built on top of Vue’s native [`<Transition>`](https://vuejs.org/guide/built-ins/transition.html) component — making it **powerful**, **easy to use**, and **fully customizable**.
+**Vue Transify** is a lightweight animation library built on top of Vue’s native [`<Transition>`](https://vuejs.org/guide/built-ins/transition.html) component — making it **powerful**, **easy to use**, and **fully customizable**.
 
-With **flexible props** and **Quality Animations** for fine-tuning, Vue Motion makes it effortless to bring your Vue components to life.
+With **flexible props** and **Quality Animations** for fine-tuning, Vue Transify makes it effortless to bring your Vue components to life.
 
 ---
 
@@ -21,7 +21,7 @@ With **flexible props** and **Quality Animations** for fine-tuning, Vue Motion m
 
 ```bash
 # npm
-npm install vue-motion
+npm install vue-transify
 ```
 
 ---
@@ -34,7 +34,7 @@ npm install vue-motion
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import "vue-motion/dist/vue-motion.css";
+import "vue-transify/dist/vue-transify.css";
 
 createApp(App).mount('#app')
 ```
@@ -56,7 +56,7 @@ createApp(App).mount('#app')
 <script setup>
 import { ref } from 'vue'
 // Import the component
-import { Fade } from "vue-motion";
+import { Fade } from "vue-transify";
 const show = ref(true)
 </script>
 
@@ -102,9 +102,9 @@ If you’d like to add a new animation, improve docs, or fix a bug:
 
 ## 🌟 Support & Feedback
 
-If you like **Vue Motion**, please consider supporting the project:
+If you like **Vue Transify**, please consider supporting the project:
 
-- ⭐ **Star** the repo on [GitHub](https://github.com/Redskullvue/vue-motion) — it helps others discover the library
+- ⭐ **Star** the repo on [GitHub](https://github.com/Redskullvue/vue-transify) — it helps others discover the library
 - 🐞 **Open an issue** or suggest new features
 - 🧩 **Share it** with other Vue developers and the community
 
