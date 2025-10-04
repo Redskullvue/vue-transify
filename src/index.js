@@ -7,7 +7,9 @@ import SlideInDown from './components/SlideInDown.vue'
 import BounceDown from './components/BounceDown.vue'
 import BounceIn from './components/BounceIn.vue'
 import BounceUp from './components/BounceUp.vue'
-
+import RotateDown from './components/RotateDown.vue'
+import RotateIn from './components/RotateIn.vue'
+import RotateUp from './components/RotateUp.vue'
 export default {
   Fade,
   SlideInLeft,
@@ -17,4 +19,7 @@ export default {
   BounceDown,
   BounceIn,
   BounceUp,
+  RotateDown,
+  RotateIn,
+  RotateUp,
 }

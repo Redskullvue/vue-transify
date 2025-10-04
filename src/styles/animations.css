@@ -276,3 +276,80 @@ GLOBAL VARIABLES (defaults)
   animation: BounceUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
+
+@keyframes RotateIn {
+  0% {
+    opacity: 0;
+    transform: rotate3d(0, 0, 1, -200deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+/* When entering */
+.rotateIn-enter-active {
+  position: absolute;
+  animation: RotateIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.rotateIn-leave-active {
+  position: absolute;
+  animation: RotateIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
+
+@keyframes RotateUp {
+  0% {
+    opacity: 0;
+    transform: rotate3d(0, 0, 1, 20deg);
+    animation-timing-function: cubic-bezier(0.815, 0.51, 0.05, 0.12);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+/* When entering */
+.rotateUp-enter-active {
+  position: absolute;
+  transform-origin: left top;
+  animation: RotateUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.rotateUp-leave-active {
+  position: absolute;
+  transform-origin: left bottom;
+  animation: RotateUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
+@keyframes RotateDown {
+  0% {
+    opacity: 0;
+    transform: rotate3d(0, 0, 0.1, -20deg);
+    animation-timing-function: cubic-bezier(0.815, 0.51, 0.05, 0.12);
+  }
+  to {
+    transform: rotate3d(0, 0, 0.2, 0deg);
+  }
+}
+
+/* When entering */
+.rotateDown-enter-active {
+  position: absolute;
+  transform-origin: left top;
+  animation: RotateDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.rotateDown-leave-active {
+  position: absolute;
+  transform-origin: right top;
+  animation: RotateDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
