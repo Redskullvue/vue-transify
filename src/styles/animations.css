@@ -138,3 +138,141 @@ GLOBAL VARIABLES (defaults)
   animation: SlideInDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
+
+/* BounceIn */
+@keyframes BounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.415, -0.61, 0.655, -1);
+    animation-timing-function: cubic-bezier(0.415, -0.61, 0.655, -1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* When entering */
+.bounceIn-enter-active {
+  position: absolute;
+  animation: BounceIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.bounceIn-leave-active {
+  position: absolute;
+  animation: BounceIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
+
+/* BounceDown */
+@keyframes BounceDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  }
+
+  40% {
+    transform: translate3d(0, 50%, 0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20%, 0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  80% {
+    transform: translate3d(0, 10%, 0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0); /* settle */
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+/* When entering */
+.bounceDown-enter-active {
+  position: absolute;
+  animation: BounceDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.bounceDown-leave-active {
+  position: absolute;
+  animation: BounceDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
+/* BounceUp */
+@keyframes BounceUp {
+  0% {
+    opacity: 0;
+    position: absolute;
+    transform: translate3d(0, 50%, 0);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  }
+  40% {
+    transform: translate3d(0, -50%, 0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 30%, 0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  70% {
+    transform: translate3d(0, -10%, 0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  80% {
+    transform: translate3d(0, 10%, 0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0); /* settle */
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+/* When entering */
+.bounceUp-enter-active {
+  position: absolute;
+  animation: BounceUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.bounceUp-leave-active {
+  position: absolute;
+  animation: BounceUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
