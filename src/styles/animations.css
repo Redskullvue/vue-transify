@@ -425,3 +425,63 @@ GLOBAL VARIABLES (defaults)
   animation: ZoomDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
+
+@keyframes FlipX {
+  0% {
+    opacity: 0;
+    transform: perspective(100px) rotate3d(1, 0, 0, 90deg);
+  }
+  40% {
+    transform: perspective(100px) rotate3d(1, 0, 0 20deg);
+  }
+  60% {
+    transform: perspective(100px) rotate3d(1, 0, 0, -10deg);
+  }
+  to {
+    transform: perspective(200px);
+  }
+}
+
+/* When entering */
+.flipX-enter-active {
+  position: absolute;
+  animation: FlipX var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.flipX-leave-active {
+  position: absolute;
+  animation: FlipX var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}
+
+@keyframes FlipY {
+  0% {
+    opacity: 0;
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  }
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0 20deg);
+  }
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -10deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+
+/* When entering */
+.flipY-enter-active {
+  position: absolute;
+  animation: FlipY var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) forwards;
+}
+
+/* When leaving */
+.flipY-leave-active {
+  position: absolute;
+  animation: FlipY var(--animation-duration, 0.5s) var(--animation-delay, 0s)
+    var(--animation-easing, ease) reverse forwards;
+}

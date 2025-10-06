@@ -45,6 +45,11 @@ const animations = ref([
     title: 'Bounces',
     children: ['BounceDown', 'BounceIn', 'BounceUp'],
   },
+
+  {
+    title: 'Flips',
+    children: ['FlipX', 'FlipY'],
+  },
   {
     title: 'Fades',
     children: ['Fade'],
