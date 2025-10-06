@@ -70,25 +70,6 @@ const show = ref(true)
 
 ---
 
-## Animations on 0.9.1
-
--Fade
--BounceDown
--BounceIn
--BounceUp
--RotateDown
--RotateIn
--RotateUp
--SlideInDown
--SlideInUp
--SlideInLeft
--SlideInRight
--ZoomDown
--ZoomIn
--ZoomUp
-
----
-
 ## ⚙️ Props
 
 -Library is fully prop based so you can customize the animations based on your need
