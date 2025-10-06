@@ -14,6 +14,8 @@ import RotateUp from './components/RotateUp.vue'
 import ZoomDown from './components/ZoomDown.vue'
 import ZoomUp from './components/ZoomUp.vue'
 import ZoomIn from './components/ZoomIn.vue'
+import FlipX from './components/FlipX.vue'
+import FlipY from './components/FlipY.vue'
 
 export {
   Fade,
@@ -30,4 +32,6 @@ export {
   ZoomDown,
   ZoomUp,
   ZoomIn,
+  FlipX,
+  FlipY,
 }

@@ -45,6 +45,8 @@ import RotateDown from '@/components/RotateDown.vue'
 import ZoomIn from '@/components/ZoomIn.vue'
 import ZoomUp from '@/components/ZoomUp.vue'
 import ZoomDown from '@/components/ZoomDown.vue'
+import FlipX from '@/components/FlipX.vue'
+import FlipY from '@/components/FlipY.vue'
 
 const showSideBar = ref(true)
 const currentAnimation = shallowRef(Fade)
@@ -65,6 +67,8 @@ const animationMap = {
   ZoomIn,
   ZoomUp,
   ZoomDown,
+  FlipX,
+  FlipY,
 }
 
 const setAnimation = (name) => {
