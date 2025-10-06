@@ -6,6 +6,12 @@ With **flexible props** and **Quality Animations** for fine-tuning, Vue Transify
 
 ---
 
+## 🖼️ Demo & Playground
+
+Try out the animations now ! : [Demo Playground](https://vue-transify.netlify.app/)
+
+---
+
 ## 🚀 Features
 
 - ✅ Built directly on top of Vue’s core `<Transition>` component
@@ -128,9 +134,3 @@ If you like **Vue Transify**, please consider supporting the project:
 - 🧩 **Share it** with other Vue developers and the community
 
 Your support helps keep the project active and growing 💚
-
----
-
-## 🖼️ Demo & Playground
-
-Coming Soon ! :)
