@@ -46,14 +46,12 @@ GLOBAL VARIABLES (defaults)
 }
 /* When entering */
 .slideInRight-enter-active {
-  position: absolute;
   animation: SlideInRight var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .slideInRight-leave-active {
-  position: absolute;
   animation: SlideInRight var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -73,14 +71,12 @@ GLOBAL VARIABLES (defaults)
 }
 /* When entering */
 .slideInLeft-enter-active {
-  position: absolute;
   animation: SlideInLeft var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .slideInLeft-leave-active {
-  position: absolute;
   animation: SlideInLeft var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -100,14 +96,12 @@ GLOBAL VARIABLES (defaults)
 }
 /* When entering */
 .slideInUp-enter-active {
-  position: absolute;
   animation: SlideInUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .slideInUp-leave-active {
-  position: absolute;
   animation: SlideInUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -127,14 +121,12 @@ GLOBAL VARIABLES (defaults)
 }
 /* When entering */
 .slideInDown-enter-active {
-  position: absolute;
   animation: SlideInDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .slideInDown-leave-active {
-  position: absolute;
   animation: SlideInDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -176,14 +168,12 @@ GLOBAL VARIABLES (defaults)
 }
 /* When entering */
 .bounceIn-enter-active {
-  position: absolute;
   animation: BounceIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .bounceIn-leave-active {
-  position: absolute;
   animation: BounceIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -219,14 +209,12 @@ GLOBAL VARIABLES (defaults)
 }
 /* When entering */
 .bounceDown-enter-active {
-  position: absolute;
   animation: BounceDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .bounceDown-leave-active {
-  position: absolute;
   animation: BounceDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -234,7 +222,7 @@ GLOBAL VARIABLES (defaults)
 @keyframes BounceUp {
   0% {
     opacity: 0;
-    position: absolute;
+
     transform: translate3d(0, 50%, 0);
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
@@ -265,14 +253,12 @@ GLOBAL VARIABLES (defaults)
 }
 /* When entering */
 .bounceUp-enter-active {
-  position: absolute;
   animation: BounceUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .bounceUp-leave-active {
-  position: absolute;
   animation: BounceUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -289,14 +275,12 @@ GLOBAL VARIABLES (defaults)
 
 /* When entering */
 .rotateIn-enter-active {
-  position: absolute;
   animation: RotateIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .rotateIn-leave-active {
-  position: absolute;
   animation: RotateIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -314,7 +298,6 @@ GLOBAL VARIABLES (defaults)
 
 /* When entering */
 .rotateUp-enter-active {
-  position: absolute;
   transform-origin: left top;
   animation: RotateUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
@@ -322,7 +305,6 @@ GLOBAL VARIABLES (defaults)
 
 /* When leaving */
 .rotateUp-leave-active {
-  position: absolute;
   transform-origin: left bottom;
   animation: RotateUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
@@ -340,7 +322,6 @@ GLOBAL VARIABLES (defaults)
 
 /* When entering */
 .rotateDown-enter-active {
-  position: absolute;
   transform-origin: left top;
   animation: RotateDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
@@ -348,7 +329,6 @@ GLOBAL VARIABLES (defaults)
 
 /* When leaving */
 .rotateDown-leave-active {
-  position: absolute;
   transform-origin: right top;
   animation: RotateDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
@@ -366,14 +346,12 @@ GLOBAL VARIABLES (defaults)
 
 /* When entering */
 .zoomIn-enter-active {
-  position: absolute;
   animation: ZoomIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .zoomIn-leave-active {
-  position: absolute;
   animation: ZoomIn var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -390,14 +368,12 @@ GLOBAL VARIABLES (defaults)
 
 /* When entering */
 .zoomUp-enter-active {
-  position: absolute;
   animation: ZoomUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .zoomUp-leave-active {
-  position: absolute;
   animation: ZoomUp var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -414,14 +390,12 @@ GLOBAL VARIABLES (defaults)
 
 /* When entering */
 .zoomDown-enter-active {
-  position: absolute;
   animation: ZoomDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .zoomDown-leave-active {
-  position: absolute;
   animation: ZoomDown var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -444,14 +418,12 @@ GLOBAL VARIABLES (defaults)
 
 /* When entering */
 .flipX-enter-active {
-  position: absolute;
   animation: FlipX var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .flipX-leave-active {
-  position: absolute;
   animation: FlipX var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
@@ -474,14 +446,12 @@ GLOBAL VARIABLES (defaults)
 
 /* When entering */
 .flipY-enter-active {
-  position: absolute;
   animation: FlipY var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) forwards;
 }
 
 /* When leaving */
 .flipY-leave-active {
-  position: absolute;
   animation: FlipY var(--animation-duration, 0.5s) var(--animation-delay, 0s)
     var(--animation-easing, ease) reverse forwards;
 }
