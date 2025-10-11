@@ -12,7 +12,7 @@
       </div>
 
       <small class="main-container--version"
-        >V-1.0.0 | Developed by <a href="https://github.com/Redskullvue">RedskullVue</a>
+        >V-1.1.1 | Developed by <a href="https://github.com/Redskullvue">RedskullVue</a>
       </small>
     </main>
 
