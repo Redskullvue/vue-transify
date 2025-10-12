@@ -3,4 +3,5 @@ export const commonProps = {
   duration: { type: Number, default: 500 },
   easing: { type: String, default: 'ease' },
   delay: { type: Number, default: 0 },
+  mode: { type: String, default: 'out-in' },
 }
