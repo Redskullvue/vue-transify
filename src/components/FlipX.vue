@@ -2,7 +2,6 @@
   <Transition
     name="flipX"
     :appear="appear"
-    :mode="mode"
     :style="{
       '--animation-duration': duration + 'ms',
       '--animation-easing': easing,

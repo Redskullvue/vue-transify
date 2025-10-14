@@ -2,7 +2,6 @@
   <Transition
     name="zoomDown"
     :appear="appear"
-    :mode="mode"
     :style="{
       '--animation-duration': duration + 'ms',
       '--animation-easing': easing,
