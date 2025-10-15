@@ -10,9 +10,10 @@
           See Motions
         </button>
       </div>
-
       <small class="main-container--version"
-        >V-1.1.1 | Developed by <a href="https://github.com/Redskullvue">RedskullVue</a>
+        >V-1.2.0 | Developed by
+        <a href="https://github.com/Redskullvue">RedskullVue </a>
+        | Scroll Down To see page transitions
       </small>
     </main>
 
@@ -25,6 +26,10 @@
         />
       </SlideInRight>
     </aside>
+  </div>
+  <!-- Where Router-View Is Rendering -->
+  <div class="router-view-container">
+    <PageTransitionHelper mode="out-in" :duration="1000" />
   </div>
 </template>
 
@@ -47,6 +52,7 @@ import ZoomUp from '@/components/ZoomUp.vue'
 import ZoomDown from '@/components/ZoomDown.vue'
 import FlipX from '@/components/FlipX.vue'
 import FlipY from '@/components/FlipY.vue'
+import PageTransitionHelper from '@/components/PageTransitionHelper.vue'
 
 const showSideBar = ref(true)
 const currentAnimation = shallowRef(Fade)
@@ -83,6 +89,14 @@ const setAnimation = (name) => {
 </script>
 
 <style>
+.router-view-container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 * {
   padding: 0px;
   margin: 0px;

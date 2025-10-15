@@ -16,6 +16,7 @@ import ZoomUp from './components/ZoomUp.vue'
 import ZoomIn from './components/ZoomIn.vue'
 import FlipX from './components/FlipX.vue'
 import FlipY from './components/FlipY.vue'
+import PageTransitionHelper from './components/PageTransitionHelper.vue'
 
 export {
   Fade,
@@ -34,4 +35,5 @@ export {
   ZoomIn,
   FlipX,
   FlipY,
+  PageTransitionHelper,
 }

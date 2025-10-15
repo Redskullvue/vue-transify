@@ -1,6 +1,6 @@
 {
   "name": "vue-transify",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": false,
   "type": "module",
   "main": "dist/vue-transify.umd.js",
@@ -38,12 +38,19 @@
   "license": "MIT",
   "description": "Animation library built on top of vue.js Transitiion component for fast and easy to use animations",
   "peerDependencies": {
-    "vue": "^3.5.22"
+    "vue": "^3.5.22",
+    "vue-router": "^4.5.1"
+  },
+  "peerDependenciesMeta": {
+    "vue-router": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
     "prettier": "3.6.2",
     "vite": "^7.1.7",
-    "vite-plugin-vue-devtools": "^8.0.2"
+    "vite-plugin-vue-devtools": "^8.0.2",
+    "vue-router": "^4.5.1"
   }
 }
