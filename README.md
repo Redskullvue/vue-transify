@@ -83,6 +83,59 @@ const show = ref(true)
 
 ---
 
+## 🧩 Page Transitions V-1.2.0
+
+Vue-Transify new update brgins route-based animations through a built in component called `<PageTransitionHelper/>`
+it's built on top of `vue-router`
+No extra setup no extra configs
+
+```
+<template>
+  <!--This component replaces the <router-view> in your app  -->
+  <PageTransitionHelper mode="out-in" :duration="1000" />
+</template>
+<script setup>
+//You need to import the animation you want to use in the app
+import {SlideInDown} from "vue-transify"
+import { PageTransitionHelper } from "vue-transify";
+</script>
+
+```
+
+And Boom ! Now you have animations on each route change
+
+⚙️ Change What Animation Each Route Has
+
+You can add animations to each route using the meta fields and the transition will automatically be added to your router-view.
+
+```index.js
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '@/views/HomeView.vue'
+import AboutView from '@/views/AboutView.vue'
+
+const routes = [
+  {
+    path: '/',
+    component: HomeView,
+    meta: { transition: 'fade' }
+  },
+  {
+    path: '/about',
+    component: AboutView,
+    meta: { transition: 'slideInUp' }
+  }
+]
+
+export default createRouter({
+  history: createWebHistory(),
+  routes
+})
+
+
+```
+
+---
+
 ## 🧑‍💻 Contributing
 
 Contributions are welcome !
