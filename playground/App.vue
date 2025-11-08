@@ -10,6 +10,7 @@
           See Motions
         </button>
       </div>
+
       <small class="main-container--version"
         >V-1.2.0 | Developed by
         <a href="https://github.com/Redskullvue">RedskullVue </a>
@@ -53,6 +54,12 @@ import ZoomDown from '@/components/ZoomDown.vue'
 import FlipX from '@/components/FlipX.vue'
 import FlipY from '@/components/FlipY.vue'
 import PageTransitionHelper from '@/components/PageTransitionHelper.vue'
+import Pulse from '@/components/Pulse.vue'
+import Flash from '@/components/Flash.vue'
+import ShakeX from '@/components/ShakeX.vue'
+import ShakeY from '@/components/ShakeY.vue'
+import Swing from '@/components/Swing.vue'
+import Tada from '@/components/Tada.vue'
 
 const showSideBar = ref(true)
 const currentAnimation = shallowRef(Fade)
@@ -75,6 +82,12 @@ const animationMap = {
   ZoomDown,
   FlipX,
   FlipY,
+  Pulse,
+  Flash,
+  ShakeX,
+  ShakeY,
+  Swing,
+  Tada,
 }
 
 const setAnimation = (name) => {

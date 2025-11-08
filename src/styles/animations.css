@@ -16,6 +16,189 @@ GLOBAL VARIABLES (defaults)
 /* NOTE : All Class prefix should start in lowercase */
 /* NOTE : All Keyframes should start with UPPERCASE , Also use camelCase  : SlideInRight , SlideInLeft  */
 
+/* Attention Animations */
+.vt-attention-pulse {
+  animation: vt-pulse var(--animation-duration) var(--animation-easing) var(--animation-delay)
+    var(--animation-iteration-count);
+}
+
+@keyframes vt-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.vt-attention-flash {
+  animation: vt-flash var(--animation-duration) var(--animation-easing) var(--animation-delay)
+    var(--animation-iteration-count);
+}
+@keyframes vt-flash {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 10%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.vt-attention-shakex {
+  animation: vt-shakex var(--animation-duration) var(--animation-easing) var(--animation-delay)
+    var(--animation-iteration-count);
+}
+
+@keyframes vt-shakex {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  10% {
+    transform: translateX(-12px) rotate(-1deg);
+  }
+  20% {
+    transform: translateX(12px) rotate(1deg);
+  }
+  30% {
+    transform: translateX(-10px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(10px) rotate(1deg);
+  }
+  50% {
+    transform: translateX(-8px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(8px) rotate(1deg);
+  }
+  70% {
+    transform: translateX(-6px) rotate(-0.8deg);
+  }
+  80% {
+    transform: translateX(6px) rotate(0.8deg);
+  }
+  90% {
+    transform: translateX(-4px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+.vt-attention-shakey {
+  animation: vt-shakey var(--animation-duration) var(--animation-easing) var(--animation-delay)
+    var(--animation-iteration-count);
+}
+
+@keyframes vt-shakey {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  10% {
+    transform: translateY(-12px) rotate(-1deg);
+  }
+  20% {
+    transform: translateY(12px) rotate(1deg);
+  }
+  30% {
+    transform: translateY(-10px) rotate(-1deg);
+  }
+  40% {
+    transform: translateY(10px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+  60% {
+    transform: translateY(8px) rotate(1deg);
+  }
+  70% {
+    transform: translateY(-6px) rotate(-0.8deg);
+  }
+  80% {
+    transform: translateY(6px) rotate(0.8deg);
+  }
+  90% {
+    transform: translateY(-4px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.vt-attention-swing {
+  animation: vt-swing var(--animation-duration) var(--animation-easing) var(--animation-delay)
+    var(--animation-iteration-count);
+}
+
+@keyframes vt-swing {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  20% {
+    transform: translateY(5px) rotate(8deg);
+  }
+  40% {
+    transform: translateY(-5px) rotate(-8deg);
+  }
+  60% {
+    transform: translateY(2px) rotate(5deg);
+  }
+  80% {
+    transform: translateY(-2px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.vt-attention-tada {
+  animation: vt-tada var(--animation-duration) var(--animation-easing) var(--animation-delay)
+    var(--animation-iteration-count);
+}
+
+@keyframes vt-tada {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  10% {
+    transform: rotate(-5deg) scale(0.9);
+  }
+  20% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  30% {
+    transform: rotate(-4deg) scale(1.1);
+  }
+  40% {
+    transform: rotate(4deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(-3deg) scale(1.1);
+  }
+  60% {
+    transform: rotate(3deg) scale(1.1);
+  }
+  70% {
+    transform: rotate(-2deg) scale(1.1);
+  }
+  80% {
+    transform: rotate(2deg) scale(1.1);
+  }
+  90% {
+    transform: rotate(-1deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
 /* Fade Animation */
 .fade-enter-active,
 .fade-leave-active {

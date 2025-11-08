@@ -1,9 +1,9 @@
 // This file is only used for exports to the built version
 import './styles/animations.css'
-import Fade from '@/components/Fade.vue'
-import SlideInLeft from '@/components/SlideInLeft.vue'
-import SlideInRight from '@/components/SlideInRight.vue'
-import SlideInUp from '@/components/SlideInUp.vue'
+import Fade from './components/Fade.vue'
+import SlideInLeft from './components/SlideInLeft.vue'
+import SlideInRight from './components/SlideInRight.vue'
+import SlideInUp from './components/SlideInUp.vue'
 import SlideInDown from './components/SlideInDown.vue'
 import BounceDown from './components/BounceDown.vue'
 import BounceIn from './components/BounceIn.vue'
@@ -16,6 +16,12 @@ import ZoomUp from './components/ZoomUp.vue'
 import ZoomIn from './components/ZoomIn.vue'
 import FlipX from './components/FlipX.vue'
 import FlipY from './components/FlipY.vue'
+import Pulse from './components/Pulse.vue'
+import Flash from './components/Flash.vue'
+import ShakeX from './components/ShakeX.vue'
+import ShakeY from './components/ShakeY.vue'
+import Swing from './components/Swing.vue'
+import Tada from './components/Tada.vue'
 import PageTransitionHelper from './components/PageTransitionHelper.vue'
 
 export {
@@ -35,5 +41,11 @@ export {
   ZoomIn,
   FlipX,
   FlipY,
+  Pulse,
+  Flash,
+  ShakeX,
+  ShakeY,
+  Swing,
+  Tada,
   PageTransitionHelper,
 }

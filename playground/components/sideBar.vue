@@ -30,6 +30,10 @@ const emits = defineEmits(['closeSideBar', 'selectAnimation'])
 
 const animations = ref([
   {
+    title: 'Attention Animations',
+    children: ['Pulse', 'Flash', 'ShakeX', 'ShakeY', 'Swing', 'Tada'],
+  },
+  {
     title: 'Slides',
     children: ['SlideInUp', 'SlideInDown', 'SlideInLeft', 'SlideInRight'],
   },

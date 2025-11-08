@@ -74,12 +74,13 @@ const show = ref(true)
 
 -Library is fully prop based so you can customize the animations based on your need
 
-| Prop         | Type      | Default   | Description                                                                           |
-| ------------ | --------- | --------- | ------------------------------------------------------------------------------------- |
-| **appear**   | `boolean` | `'false'` | If true animation will run on load                                                    |
-| **duration** | `number`  | `500`     | Duration of the animation in milliseconds.                                            |
-| **delay**    | `number`  | `0`       | Delay before the animation starts in milliseconds.                                    |
-| **easing**   | `string`  | `'ease'`  | CSS easing function to control the transition curve(CSS acceptable timing functions). |
+| Prop          | Type              | Default   | Description                                                                                    |
+| ------------- | ----------------- | --------- | ---------------------------------------------------------------------------------------------- |
+| **appear**    | `boolean`         | `'false'` | If true animation will run on load                                                             |
+| **duration**  | `number`          | `500`     | Duration of the animation in milliseconds.                                                     |
+| **delay**     | `number`          | `0`       | Delay before the animation starts in milliseconds.                                             |
+| **easing**    | `string`          | `'ease'`  | CSS easing function to control the transition curve(CSS acceptable timing functions).          |
+| **iteration** | `string , number` | `5`       | Number of time an animation would run based on CSS iteration-count(Only Attention Animations). |
 
 ---
 
